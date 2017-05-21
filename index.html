@@ -43,102 +43,120 @@
         <!--  page 2: demographics -->
 
         <div class="page" id="page2">
-            <form action="serverPage.php" method="post">
-                <fieldset>
-                    What is your age?<br>
-                    <select name="age" id='18_100'></select><br><br>
+            <form action="" method="post">
+                What is your age?<br>
+                <select name="age" id='18_100'></select><br><br>
 
-                    What is your gender?<br>
-                    <label>
-                        <input type="radio" id='g1' name="gender" value="female">Female<br>
-                    </label>
-                    <label>
-                        <input type='radio' id='g2' name="gender" value="male">Male<br>
-                    </label><br><br>
+                What is your gender?<br>
+                <ul>
+                    <li>
+                        <label><input type="radio" id='g1' name="gender" value="female">Female</label>
+                    </li>
+                    <li>
+                        <label><input type='radio' id='g2' name="gender" value="male">Male</label>
+                    </li>
 
-                    What is your current state of residence?<br><select name="states">
-                    <option value="AL">Alabama</option>
-                    <option value="AK">Alaska</option>
-                    <option value="AZ">Arizona</option>
-                    <option value="AR">Arkansas</option>
-                    <option value="CA">California</option>
-                    <option value="CO">Colorado</option>
-                    <option value="CT">Connecticut</option>
-                    <option value="DE">Delaware</option>
-                    <option value="DC">District Of Columbia</option>
-                    <option value="FL">Florida</option>
-                    <option value="GA">Georgia</option>
-                    <option value="HI">Hawaii</option>
-                    <option value="ID">Idaho</option>
-                    <option value="IL">Illinois</option>
-                    <option value="IN">Indiana</option>
-                    <option value="IA">Iowa</option>
-                    <option value="KS">Kansas</option>
-                    <option value="KY">Kentucky</option>
-                    <option value="LA">Louisiana</option>
-                    <option value="ME">Maine</option>
-                    <option value="MD">Maryland</option>
-                    <option value="MA">Massachusetts</option>
-                    <option value="MI">Michigan</option>
-                    <option value="MN">Minnesota</option>
-                    <option value="MS">Mississippi</option>
-                    <option value="MO">Missouri</option>
-                    <option value="MT">Montana</option>
-                    <option value="NE">Nebraska</option>
-                    <option value="NV">Nevada</option>
-                    <option value="NH">New Hampshire</option>
-                    <option value="NJ">New Jersey</option>
-                    <option value="NM">New Mexico</option>
-                    <option value="NY">New York</option>
-                    <option value="NC">North Carolina</option>
-                    <option value="ND">North Dakota</option>
-                    <option value="OH">Ohio</option>
-                    <option value="OK">Oklahoma</option>
-                    <option value="OR">Oregon</option>
-                    <option value="PA">Pennsylvania</option>
-                    <option value="RI">Rhode Island</option>
-                    <option value="SC">South Carolina</option>
-                    <option value="SD">South Dakota</option>
-                    <option value="TN">Tennessee</option>
-                    <option value="TX">Texas</option>
-                    <option value="UT">Utah</option>
-                    <option value="VT">Vermont</option>
-                    <option value="VA">Virginia</option>
-                    <option value="WA">Washington</option>
-                    <option value="WV">West Virginia</option>
-                    <option value="WI">Wisconsin</option>
-                    <option value="WY">Wyoming</option>
-                    <option value="other">Other</option></select><br><br>
+                </ul><br>
 
-                    Do you currently own a facebook account?<br>
-                    <label><input type="radio" name="facebookAccount" value="Yes">Yes</label><br>
-                    <label><input type="radio" name="facebookAccount" value="No">No</label><br><br>
+                What is your current state of residence?<br><select name="states">
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="DC">District Of Columbia</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+                <option value="other">Other</option></select><br><br>
+
+                Do you currently own a facebook account?
+                <ul>
+                    <li>
+                        <label><input type="radio" name="facebookAccount" value="Yes">Yes</label>
+                    </li>
+                    <li>
+                        <label><input type="radio" name="facebookAccount" value="No">No</label>
+                    </li>
+                </ul>
+
+                Do you currently own a facebook account?
+                <ul>
+                    <li>
+                        <label><input type="radio" name="facebookAccount" value="Yes">Yes</label>
+                    </li>
+                    <li>
+                        <label><input type="radio" name="facebookAccount" value="No">No</label>
+                    </li>
+                </ul>
 
 
-                    Do you currently own a facebook account?<br>
-                    <label><input type="radio" name="facebookAccount" value="Yes">Yes</label>
-                    <label><input type="radio" name="facebookAccount" value="No">No</label><br><br>
+                Which best describes how often you visit Facebook to post content or to read content posted by others?
+                <ul>
+                    <li>
+                        <label><input type="radio" name="facebookUsage" value="More than once a day">More than once a day</label>
+                    </li>
+                    <li>
+                        <label><input type="radio" name="facebookUsage" value="At least a few times a week">At least a few times a week</label>
+                    </li>
+                    <li>
+                        <label><input type="radio" name="facebookUsage" value="At least a few times a month">t least a few times a month</label>
+                    </li>
+                    <li>
+                        <label><input type="radio" name="facebookUsage" value="Less than a few times a month">Less than a few times a month</label>
+                    </li>
+                </ul>
 
-                    Which best describes how often you visit Facebook to post content or to read content posted by others?<br>
-                    <label>
-                        <input type="radio" name="facebookUsage" value="More than once a day">More than once a day</label>
-                    <label><br>
-                        <input type="radio" name="facebookUsage" value="At least a few times a week">At least a few times a week</label>
-                    <label><br>
-                        <input type="radio" name="facebookUsage" value="At least a few times a month">t least a few times a month</label>
-                    <label><br>
-                        <input type="radio" name="facebookUsage" value="Less than a few times a month">Less than a few times a month</label><br>
-
-                <input type="button" onclick="nextPage()" class="navButton">
-                </fieldset>
-
+            <input type="button" onclick="nextPage()" class="navButton">
             </form>
 
         </div>
 
         <!-- page 3: political identity -->
         <div class="page" id="page3">
-            <form action="serverPage.php" method="post">
+            <form action="" method="post">
                 <fieldset>
                     How would you describe your political affiliation?<br>
                     <label>
@@ -165,16 +183,23 @@
 
         <!-- page 5: trial 1 -->
         <div class="page" class="memePage" id="page5">
-            <div class="memeCopy" id="trial1Copy">
-                <p>"Quote goes here"</p>
+
+            <div id="memeCopyBox">
+                <p id="memeCopy">
+                    "“Our culture and our traditions are who we are. We must maintain our    best selves of the past to be the best moving forward.”<br><br>
+                    -Hillary Clinton, 1991
+                </p>
+
             </div>
-            <div class="memeImage" id="trial1Image">
-                <!-- image needs to go here -->
-                <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Hillary_Clinton_official_Secretary_of_State_portrait_crop.jpg"></img>
+
+            <div id="memeImageBox">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Hillary_Clinton_official_Secretary_of_State_portrait_crop.jpg">
+
             </div>
-            <div class="memeQuestions" id="trial1Questions">
-                <form action="serverPage.php" method="post">
-                    <label class="likertStatement">How strong is your reaction to these meme?</label>
+
+            <div id="memeQuestions">
+                <form action="" method="post">
+                    <label class="statement">How strong is your reaction to these meme?</label>
                     <ul class="likert">
                         <li>
                             <input type="radio" name="likert" value="1">
@@ -196,7 +221,8 @@
                             <input type="radio" name="likert" value="1">
                             <label>5 Very strongly</label>
                         </li>
-                        <label class="likertStatement">How positive or negative is your reaction to this meme?</label>
+
+                        <label class="statement">How positive or negative is your reaction to this meme?</label>
                         <ul class="likert">
                             <li>
                                 <input type="radio" name="likert" value="1">
@@ -219,12 +245,13 @@
                                 <label>5 Very strongly</label>
                             </li>
                             <div class="buttons">
-                            <button class="submit">Submit</button>
+                                <button class="submit">Submit</button>
                             </div>
                         </ul>
+                    </ul>
+                </form>
             </div>
 
-            <input type="button" onclick="nextMeme()">
         </div>
 
 

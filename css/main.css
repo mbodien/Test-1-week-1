@@ -95,49 +95,67 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-.memeCopy {
-    color: white;
-    width:60%;
-    position: absolute;
+.page {
+    border: 1px solid black;
+    height: 100%;
+    padding: 15px 35px 40px 35px;
+    margin: 15px 30px;
+}
+
+
+#memeCopyBox {
     background: black;
-    height:400px;
-    padding:20px 25px;
-    float:left;
-    border: 3px solid black
-    z-index:4
+    width:100%;
+    height:300px;
+    color:white;
+    padding: 20px 15px;
 }
 
-.memeImage {
+#memeCopy {
+    max-width: 65%;
+    font-size: 19pt;
+    line-height: 1.5em;
+    z-index:1;
+}
+
+#memeImageBox {
     position: absolute;
-    right:0;
-    top:0;
-    width:40%;
-    height:400px;
-    display:inline;
-    order: 3px solid black
-    z-index:3
+    right:37px;
+    top:31px;
+    background:black;
+    width:320px;
+    height:338px;
+    z-index:10;
 }
 
-.memeImage img {
-    width: 100%;
-    height:auto;
-    overflow: scroll;
+#memeImageBox img {
+    max-width:100%;
+    max-height:100%;
 }
+
+#memeQuestions {
+    position: relative;
+    top: 40px;
+    width:75%;
+    margin:auto;
+}
+
 
 form .statement {
     display:block;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
-    padding: 30px 0 0 4.25%;
-    margin-bottom:10px;
+    padding: 30px 0 0 4.5%;
+    margin-bottom:20px;
 }
+
 form .likert {
     list-style:none;
     width:100%;
     margin:0;
     padding:0 0 35px;
     display:block;
-    border-bottom:2px solid #efefef;
+    border-bottom: 2px solid #efefef;
 }
 form .likert:last-of-type {border-bottom:0;}
 form .likert:before {
@@ -155,6 +173,7 @@ form .likert li {
     width:19%;
     text-align:center;
     vertical-align: top;
+    margin-bottom: 75px;
 }
 form .likert li input[type=radio] {
     display:block;

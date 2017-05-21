@@ -20,7 +20,7 @@ function nextPage() {
 
 var select = '';
 for (i=18;i<=100;i++) {
-    select += '<option 'val=' + i + '>' + i + '</option>';
+    select += '<option val=' + i + '>' + i + '</option>';
 }
 $('#18_100').html(select);
 

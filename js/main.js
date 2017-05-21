@@ -1,7 +1,6 @@
 $(document).ready(function () {
     $('.page').hide();
     $('#page1').show();
-    nextPage()
 })
 
 

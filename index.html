@@ -1,0 +1,250 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <!-- page 1: consent -->
+
+        <div class="page" id="page1">
+            <div class="header">
+                <h1>Welcome</h1>
+            </div>
+
+            <div class="directions">
+                <p id="welcomeText">In this HIT, you will first complete a questionnaire about who you are and some of the values that you hold.
+                    Then you will be asked to evaluate 5 memes.
+                    Finally, you will complete another short questionnaire. The HIT should take between 8 and 12 minutes to complete.
+                </p>
+            </div>
+
+            <div class="navButton">
+                <button onclick="nextPage()">Begin questionnaire</button>
+            </div>
+
+        </div>
+
+        <!--  page 2: demographics -->
+
+        <div class="page" id="page2">
+            <form action="serverPage.php" method="post">
+                <fieldset>
+                    What is your age?<br>
+                    <select name="age" id='18_100'></select><br><br>
+
+                    What is your gender?<br>
+                    <label>
+                        <input type="radio" id='g1' name="gender" value="female">Female<br>
+                    </label>
+                    <label>
+                        <input type='radio' id='g2' name="gender" value="male">Male<br>
+                    </label><br><br>
+
+                    What is your current state of residence?<br><select name="states">
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District Of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                    <option value="other">Other</option></select><br><br>
+
+                    Do you currently own a facebook account?<br>
+                    <label><input type="radio" name="facebookAccount" value="Yes">Yes</label><br>
+                    <label><input type="radio" name="facebookAccount" value="No">No</label><br><br>
+
+
+                    Do you currently own a facebook account?<br>
+                    <label><input type="radio" name="facebookAccount" value="Yes">Yes</label>
+                    <label><input type="radio" name="facebookAccount" value="No">No</label><br><br>
+
+                    Which best describes how often you visit Facebook to post content or to read content posted by others?<br>
+                    <label>
+                        <input type="radio" name="facebookUsage" value="More than once a day">More than once a day</label>
+                    <label><br>
+                        <input type="radio" name="facebookUsage" value="At least a few times a week">At least a few times a week</label>
+                    <label><br>
+                        <input type="radio" name="facebookUsage" value="At least a few times a month">t least a few times a month</label>
+                    <label><br>
+                        <input type="radio" name="facebookUsage" value="Less than a few times a month">Less than a few times a month</label><br>
+
+                <input type="button" onclick="nextPage()" class="navButton">
+                </fieldset>
+
+            </form>
+
+        </div>
+
+        <!-- page 3: political identity -->
+        <div class="page" id="page3">
+            <form action="serverPage.php" method="post">
+                <fieldset>
+                    How would you describe your political affiliation?<br>
+                    <label>
+                        <input type="radio" id="pa1" name="party" value="1">1. Very Liberal
+                    </label><br>
+                    <label>
+                        <input type="radio" id="pa2" name="party" value="2">2.
+                    </label><br>
+                    <label>
+                        <input type="radio" id="pa3" name="party" value="3">3.
+                    </label><br>
+                    <input type="button" onclick="nextPage()" class="navButton">
+                </fieldset>
+            </form>
+        </div>
+
+        <!-- page 4: pre-directions -->
+        <div class="page" id="page4">
+            <h1>Directions</h1>
+            <p>you will now be presented with 5 different memes, one at a time. Imagine you see each meme while surfing the web.<br>Your task is to examine the meme and then answer questions. Remember, we want to know about your reaction to the meme.
+            </p>
+            <input type="button" onclick="nextPage()" class="navButton">
+        </div>
+
+        <!-- page 5: trial 1 -->
+        <div class="page" class="memePage" id="page5">
+            <div class="memeCopy" id="trial1Copy">
+                <p>"Quote goes here"</p>
+            </div>
+            <div class="memeImage" id="trial1Image">
+                <!-- image needs to go here -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Hillary_Clinton_official_Secretary_of_State_portrait_crop.jpg"></img>
+            </div>
+            <div class="memeQuestions" id="trial1Questions">
+                <form action="serverPage.php" method="post">
+                    <label class="likertStatement">How strong is your reaction to these meme?</label>
+                    <ul class="likert">
+                        <li>
+                            <input type="radio" name="likert" value="1">
+                            <label>1 Not strong at all</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="2">
+                            <label>2</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="3">
+                            <label>3</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="4">
+                            <label>4</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="1">
+                            <label>5 Very strongly</label>
+                        </li>
+                        <label class="likertStatement">How positive or negative is your reaction to this meme?</label>
+                        <ul class="likert">
+                            <li>
+                                <input type="radio" name="likert" value="1">
+                                <label>1 Not strong at all</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="likert" value="2">
+                                <label>2</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="likert" value="3">
+                                <label>3</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="likert" value="4">
+                                <label>4</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="likert" value="1">
+                                <label>5 Very strongly</label>
+                            </li>
+                            <div class="buttons">
+                            <button class="submit">Submit</button>
+                            </div>
+                        </ul>
+            </div>
+
+            <input type="button" onclick="nextMeme()">
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+
+
+
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>

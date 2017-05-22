@@ -12,7 +12,16 @@ function nextPage() {
     var pageShow = '#page' + currentPage;
     $(pageHide).hide();
     $(pageShow).show();
-    console.log(currentPage, pageShow)
+    addData('test', 'age 33', 'male');
+}
+
+
+
+
+var database = firebase.database();
+
+function addData (MTurkID, age, gender){
+    database.set({ID: MTurkID, Age: age, Gender:gender});
 }
 
 
